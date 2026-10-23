@@ -1,0 +1,9 @@
+name: astrbot_plugin_voice_split
+display_name: 分段语音
+desc: 按 AstrBot 分段回复规则拆分 LLM 输出，并逐句决定语音/文字（忙 0.7 / 空闲 0.2 由 virtual_life 提供）。
+version: v1.0.0
+author: rinka
+repo: https://github.com/yuki39fufu/astrbot_plugin_voice_split
+astrbot_version: ">=4.29.0"
+support_platforms:
+  - aiocqhttp

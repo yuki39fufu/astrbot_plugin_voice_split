@@ -1,0 +1,20 @@
+{
+  "enable": {
+    "description": "启用分段语音",
+    "type": "bool",
+    "hint": "开启后由本插件先拆分并逐段决定语音；AstrBot 自带分段请保持开启，它负责逐条发送与间隔。",
+    "default": true
+  },
+  "fallback_probability": {
+    "description": "兜底语音概率",
+    "type": "float",
+    "hint": "virtual_life 没有提供本轮概率时使用；0 表示全部文字。",
+    "default": 0.0
+  },
+  "max_concurrent_tts": {
+    "description": "语音合成并发数",
+    "type": "int",
+    "hint": "一次拆分里最多同时合成几条语音，太大可能触发 TTS 限流。",
+    "default": 3
+  }
+}
